@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "diffusion-server"
+version = "0.1.0"
+description = ""
+authors = ["Seungbeom <tmdqja75@gmail.com>"]
+readme = "README.md"
+packages = [{include = "diffusion_server"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+diffusers = "^0.11.1"
+transformers = "^4.25.1"
+accelerate = "^0.15.0"
+fastapi = "^0.88.0"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
